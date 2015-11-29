@@ -1,1 +1,1 @@
-add_executable(ppm main.cpp)
+add_shared_library(pver version.cpp character.cpp token.cpp)

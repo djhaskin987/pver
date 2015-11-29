@@ -9,4 +9,4 @@ install_manifest.txt
 *.sw*
 *.o
 *.la
-*.ghc
+*.gch
