@@ -11,9 +11,9 @@ namespace pver {
             PUNCTUATION,
             NUMERIC,
             ALHPANUMERIC
-        } token_type;
+        } tag_type;
         std::string token;
-        token_type tag;
+        tag_type tag;
     public:
         token(const std::string & token_string);
         bool is_punct() const;
@@ -24,6 +24,7 @@ namespace pver {
     typedef std::forward_list<token> token_list_type;
     token_list_type tokenize(const std::string & ver);
     int compare_tokens(token_list_type a, token_list_type b);
+    bool matches(token_list_type a, token_list_type b);
 }
 
 #endif
