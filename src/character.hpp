@@ -13,7 +13,7 @@ namespace pver {
         // is a valid epoch separator byte (`:`)
         bool is_epoch_separator(int c);
 
-        // is a valid punctuation byte (`,` `;` `_` `.` `~`)
+        // is a valid punctuation byte (`.`,`^`,`.`,`_`)
         bool is_punctuation(int c);
 
         // is an alphabetic byte (`a` - `z`)
@@ -24,9 +24,6 @@ namespace pver {
 
         // is an alphanumeric byte
         bool is_alphanumeric(int c);
-
-        // is a valid version byte (it matches spec for one of the above)
-        bool is_valid(int c);
     }
 }
 
